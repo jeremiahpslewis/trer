@@ -96,3 +96,6 @@ a practitioner’s guide, https://web.stanford.edu/~gentzkow/research/CodeAndDat
 - Wilson, Bryan, Cranston, Kitzes, Nederbragt and Teal (2017): Good enough practices in scientific computing, PLOS Computational Biology 13(6): 1-20, https://doi.org/10.1371/journal.pcbi.1005510
 
 
+### Code source:
+
+Some of the code used in making this reproducible was first created for this repository: https://github.com/jeremiahpslewis/alec

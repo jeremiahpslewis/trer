@@ -28,6 +28,6 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          garden test -n test-alec --force
+          garden run task generate-paper
         env:
           GARDEN_LOGGER_TYPE: basic

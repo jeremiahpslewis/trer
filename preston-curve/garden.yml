@@ -1,6 +1,6 @@
 kind: Module
 type: container
-name: model-orchestrator
+name: paper-module
 services:
   - name: r-instance
     ports:
@@ -10,13 +10,9 @@ services:
       sync:
         - target: /app
           mode: two-way
-      
-# tasks:
-#   - name: generate-paper
-#     # command: ["dagster", "pipeline", "execute", "-f", "main.py", "--preset", "unittest"]
-#     artifacts:
-#       - source: /app/*.parquet
-#         target: results
-# tests:
-#   - name: test-alec
-#     command: ["dagster", "pipeline", "execute", "-f", "main.py", "--preset", "unittest"]
+tasks:
+  - name: generate-paper
+    command: ["make", "all"]
+    artifacts:
+      - source: /app/*.parquet
+        target: results
