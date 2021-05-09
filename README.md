@@ -49,7 +49,7 @@ install_package_if_missing("rmarkdown")
 
 # In addition, if you have no working LaTeX environment, consider
 # installing the neat tinytex LateX distribution. It is lightweight and
-# you can install it from wihtin R! See https://yihui.org/tinytex/
+# you can install it from within R! See https://yihui.org/tinytex/
 # To install it, run from the R console:
 
 install_package_if_missing('tinytex')

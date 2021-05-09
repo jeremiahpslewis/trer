@@ -1,0 +1,9 @@
+kind: Project
+name: alec
+environments:
+  - name: local
+providers:
+  - name: local-kubernetes
+    environments: ["local"]
+  - name: local-kubernetes
+    environments: ["local"]

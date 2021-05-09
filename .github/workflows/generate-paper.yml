@@ -1,0 +1,33 @@
+name: Run Unit Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-data:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+
+      - name: Install Garden
+        run: |
+          curl -sL https://get.garden.io/install.sh | bash
+          echo "$HOME/.garden/bin" >> $GITHUB_PATH
+
+      - name: Setup Minikube
+        uses: manusa/actions-setup-minikube@v2.4.0
+        with:
+          minikube version: 'v1.20.0'
+          kubernetes version: 'v1.20.6'
+          github token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Unit Tests
+        run: |
+          garden test -n test-alec --force
+        env:
+          GARDEN_LOGGER_TYPE: basic
