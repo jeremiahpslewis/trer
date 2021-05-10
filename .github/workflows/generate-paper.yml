@@ -1,4 +1,4 @@
-name: Run Unit Tests
+name: Generate Paper!
 
 on:
   push:
@@ -31,3 +31,8 @@ jobs:
           garden run task generate-paper
         env:
           GARDEN_LOGGER_TYPE: basic
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: paper-output
+          path: .garden/artifacts/results/paper.pdf
