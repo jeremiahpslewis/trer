@@ -4,7 +4,7 @@ PAPER := output/paper.pdf
 
 PRESENTATION := output/presentation.pdf
 
-TARGETS :=  $(PAPER) $(PRESENTATION)
+TARGETS :=  $(PAPER)# $(PRESENTATION)
 
 WORLDBANK_DATA := data/pulled/worldbank.rda
 
@@ -40,6 +40,6 @@ $(PAPER): doc/paper.Rmd doc/references.bib $(RESULTS)
 	mv doc/paper.pdf output
 	rm -f doc/paper.ttt doc/paper.fff
 
-$(PRESENTATION): doc/presentation.rmd $(RESULTS)
-	$(RSCRIPT) -e 'library(rmarkdown); render("doc/presentation.Rmd")'
-	mv doc/presentation.pdf output
+# $(PRESENTATION): doc/presentation.rmd $(RESULTS)
+# 	$(RSCRIPT) -e 'library(rmarkdown); render("doc/presentation.Rmd")'
+# 	mv doc/presentation.pdf output

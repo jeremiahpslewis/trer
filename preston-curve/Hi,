@@ -1,0 +1,18 @@
+Hi,
+
+Thanks again for running this progressive class which really embraces the possibilities of modern digital instruction.
+I may have approached the assignment somewhat differently from you expectations, but I decided to take a liberal interpretation
+of 'extending' the current analysis. Because reproducible computing is the core objective of this unit, there were
+a couple of aspects of the project template which seemed like they could be moved forward in terms of reproducibility:
+
+1. Adding Docker containers so that a versioned computational environment (as a source of truth) could be used to generate the paper.
+1. Adding Github Actions CI/CD and using it to compile the paper automatically after every push, this way not only versioning,
+but also a 'canonical' computational environment is defined.
+1. Adding Github Superlinter and fixing linting errors in the template, so that collaboration is easier to align via automated 'guard rails'.
+
+Note: In the interest of expediency, I deactivated the creation of the presentation.pdf file.
+
+Looking forward to hearing your thoughts.
+
+Cheers,
+Jeremiah Lewis
