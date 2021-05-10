@@ -31,12 +31,12 @@ Assuming that you have RStudio and make/Rtools installed, this should be relativ
 
 1. Download, clone or fork the repository to your local computing environment.
 2. Before building everything you most likely need to install additional packages. This repository follows the established principle not to install any packages automatically. This is your computing environment. You decide what you want to install. See the code below for installing the packages.
-4. Run 'make all' either via the console or by identifying the 'Build All' button in the 'Build' tab (normally in the upper right quadrant of the RStudio screen).
-5. Eventually, you will be greeted with the two files in the output directory: "paper.pdf" and "presentation.pdf". Congratulations! You have successfully used an open science resource and reproduced our "analysis". Now modify it and make it your own project!
+3. Run 'make all' either via the console or by identifying the 'Build All' button in the 'Build' tab (normally in the upper right quadrant of the RStudio screen).
+4. Eventually, you will be greeted with the two files in the output directory: "paper.pdf" and "presentation.pdf". Congratulations! You have successfully used an open science resource and reproduced our "analysis". Now modify it and make it your own project!
 
 If you do not see 'Build' tab this is most likely because you do not have 'make' installed on your system.
 
-- For Windows: Install Rtools: <https://cran.r-project.org/bin/windows/Rtools/> 
+- For Windows: Install Rtools: <https://cran.r-project.org/bin/windows/Rtools/>
 - For MacOS: You need to install the Mac OS developer tools. Open a terminal and run `xcode-select --install` Follow the instructions
 - On Linux: I have never seen a Unix environment without 'make'.
 
