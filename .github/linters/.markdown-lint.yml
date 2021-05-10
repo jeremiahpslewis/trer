@@ -19,6 +19,7 @@
 # Rules by id #
 ###############
 MD026: false                  # Allow trailing line punctuation
+MD013: false                  # Ignore line length
 
 #################
 # Rules by tags #
