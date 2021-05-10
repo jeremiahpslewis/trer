@@ -48,8 +48,8 @@ README.html
 # Config file - potentially containing private data
 config.csv
 
-# Garden error file
-error.log
+# Error and log files
+*.log
 
 # Temporary files created by Garden
 .garden/
