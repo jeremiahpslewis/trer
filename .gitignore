@@ -53,3 +53,7 @@ config.csv
 
 # Temporary files created by Garden
 .garden/
+
+# Ignore intermediate latex files and pdf output
+*.tex
+*.pdf

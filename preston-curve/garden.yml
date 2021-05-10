@@ -14,5 +14,6 @@ tasks:
   - name: generate-paper
     command: ["make", "all"]
     artifacts:
-      - source: /app/*.parquet
+      - source: /app/**/*.pdf
         target: results
+    timeout: 6000
